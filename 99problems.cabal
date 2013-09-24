@@ -1,0 +1,20 @@
+name:           99problems
+version:        0.1
+cabal-version:  >=1.2
+build-type:     Simple
+author:         anton.kropp
+
+library
+  hs-source-dirs:  src
+  build-depends:   base >= 4
+  ghc-options:     -Wall
+
+test-suite ProblemsTests
+  type:            exitcode-stdio-1.0
+  main-is:         TestsMain.hs
+  ghc-options:     -Wall -rtsopts
+  build-depends:   base >= 4, HTF > 0.9, HUnit, random  
+  hs-source-dirs:  
+                  src,
+                  src/tests
+

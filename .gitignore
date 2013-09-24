@@ -1,0 +1,9 @@
+#ignore thumbnails created by windows
+Thumbs.db
+#ignore generated files
+dist/
+.settings/
+.dist-buildwrapper/
+.project
+*.sublime-project
+*.sublime-workspace
